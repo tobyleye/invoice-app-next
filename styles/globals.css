@@ -1,16 +1,19 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+:root {
+    --color-purple-base: #7C5DFA;
+    --color-purple-light: #9277FF;
 
-* {
-  box-sizing: border-box;
+    --color-red-base: #EC5757;
+    --color-red-light: #FF9797;
+
+
+    --color-black1: #1E2139;
+    --color-black2: #0C0E16;
+    --color-black3: #141625;
+
+    --color-light-bg: #888EB0;
+
 }

@@ -1,0 +1,33 @@
+.content {
+    @apply fixed left-0  top-0 h-full overflow-auto pl-20 bg-white rounded-r-xl;
+    width: 500px;
+    animation: contentSlideIn 250ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.overlay{
+    @apply fixed top-0 left-0 w-full h-full;
+    background: rgba(0,0,0,.5);
+    animation: overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1) forwards
+}
+
+.innerContent {
+    @apply px-10 py-20;
+}
+
+@keyframes contentSlideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes overlayShow {
+    0% {
+        opacity: 0; 
+    }
+    100%{
+        opacity: 1;
+    }
+}
